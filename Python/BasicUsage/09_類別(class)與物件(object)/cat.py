@@ -20,6 +20,9 @@ class Felidae: # 貓科
     @abstractmethod
     def roar(self):
         pass
+    @abstractmethod
+    def show_info(self):
+        pass
 
 
 class Lion(Felidae): # 獅子
@@ -28,6 +31,8 @@ class Lion(Felidae): # 獅子
     # 前面不加底線(underscore)者為公有的(public)方法，外部可直接存取。
     def roar(self):
         return 'Hoaaaaaaar~~~ 吼~~~'
+    def show_info(self):
+        return self._length, self._weight
 
 
 class FelisCatus(Felidae): # 家貓
@@ -43,3 +48,5 @@ class FelisCatus(Felidae): # 家貓
     # 前面不加底線(underscore)者為公有的(public)方法，外部可直接存取。
     def roar(self):
         return '%s: Meow~~~ 喵~~~' % self.__name
+    def show_info(self):
+        return self._length, self._weight

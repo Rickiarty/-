@@ -38,6 +38,8 @@ cat1 = FelisCatus(length=0.25, weight=4, name='喵皇')
 
 print(lion1.roar())
 print(cat1.roar())
+print('lion 1: length = %f m, weight = %f kg' % lion1.show_info())
+print(' cat 1: length = %f m, weight = %f kg' % cat1.show_info())
 
 r = 3
 print(Circle.calc_area(r))
