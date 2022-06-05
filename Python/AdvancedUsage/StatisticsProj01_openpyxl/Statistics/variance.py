@@ -1,4 +1,3 @@
-from openpyxl import load_workbook
 
 def single_variance_unit(xi, average) -> float:
     return (xi - average) ** 2
