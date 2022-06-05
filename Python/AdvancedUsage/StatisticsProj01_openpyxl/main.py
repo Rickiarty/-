@@ -4,7 +4,7 @@ from Statistics.variance import variance
 from Statistics.standard_deviation import standard_deviation, standard_deviation_from_known_variance
 
 if __name__ == '__main__':
-    path_to_excel_file = __file__.replace('\\' + __file__.split('\\')[-1], '\\xlsx\\學校防疫政策滿意度調查_term_report.xlsx')
+    path_to_excel_file = __file__.replace('\\' + __file__.split('\\')[-1], '\\xlsx\\YourData.xlsx')
     path_to_excel_file = os.path.abspath(path_to_excel_file)
     #print(path_to_excel_file) # DEBUG
     range_start = 3
@@ -32,8 +32,8 @@ if __name__ == '__main__':
         ws['V16'].value = var_s
         ws['V15'].value = sdev_s
 
-        print("(此抽樣調查中) 南部 地區的學生滿意度變異數 = " + str(var_s))
-        print("(此抽樣調查中) 南部 地區的學生滿意度標準差 = " + str(sdev_s))
+        print("(此抽樣調查中) X 地區的學生滿意度變異數 = " + str(var_s))
+        print("(此抽樣調查中) X 地區的學生滿意度標準差 = " + str(sdev_s))
 
         # other regions 
         range_cells_other_region = []
