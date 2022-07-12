@@ -84,6 +84,9 @@ if __name__ == '__main__':
         # save to .xlsx file 
         wb.save(path_to_excel_file)
         # 告知使用者本程式正常執行完畢 
+        # Show users that this program finished its tasks successfully and completely. 
         print("\n[Python程式完整執行完畢]\n(file path: " + path_to_excel_file + " )\n")
     except Exception as ex:
+        # There was/were something(s) wrong during execution. 
+        # Show users that the exception thrown by Python3. 
         print("\nPython程式發生錯誤: \n" + str(ex) + "\n")
