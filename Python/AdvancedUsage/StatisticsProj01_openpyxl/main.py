@@ -88,5 +88,5 @@ if __name__ == '__main__':
         print("\n[Python程式完整執行完畢]\n(file path: " + path_to_excel_file + " )\n")
     except Exception as ex:
         # There was/were something(s) wrong during execution. 
-        # Show users that the exception thrown by Python3. 
+        # Show users that there was/were some exception(s) thrown by Python3. 
         print("\nPython程式發生錯誤: \n" + str(ex) + "\n")
